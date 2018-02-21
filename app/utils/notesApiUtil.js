@@ -7,7 +7,6 @@ export const fetchNotes = () => {
 };
 
 export const postNote = (note) => {
-  debugger
   return fetch('http://localhost:3000/notes', {
     method: 'POST',
     body: JSON.stringify({ note }),
